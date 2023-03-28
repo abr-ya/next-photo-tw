@@ -1,5 +1,7 @@
-import Hero from "@/components/Hero";
 import Head from "next/head";
+import Hero from "@/components/Hero";
+import Slider from "@/components/Slider";
+import { SliderData } from "@/data/slider";
 
 const Home = () => {
   return (
@@ -15,6 +17,7 @@ const Home = () => {
         text="Здесь небольшой текст про то, как хорошо болтаться по миру и фотографировать!.."
         buttonLabel="clickMe"
       />
+      <Slider data={SliderData} />
     </>
   );
 };
